@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header
-      className="fixed w-full px-5 py-[32px] md:px-25 md:py-10 flex items-center justify-between"
+      className="w-full px-5 py-[32px] md:px-25 md:py-10 flex items-center justify-between mb-8 md:mb-12 lg:mb-[95px]"
       id="#header"
     >
       {/* logo */}

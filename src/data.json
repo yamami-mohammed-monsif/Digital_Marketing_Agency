@@ -1,0 +1,8 @@
+{
+  "navLinks": [
+    { "id": 1, "text": "Home", "url": "#header" },
+    { "id": 2, "text": "About", "url": "#about" },
+    { "id": 3, "text": "Service", "url": "#services" },
+    { "id": 4, "text": "Office", "url": "#office" }
+  ]
+}

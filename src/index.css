@@ -12,15 +12,24 @@
 
 @layer base {
   body {
-    @apply font-main text-main;
+    @apply font-main text-main text-[18px] leading-[180%] max-w-[1440px] mx-auto relative;
   }
 
-  .container {
+  h1 {
+    @apply font-bold text-[40px] md:text-[50px] lg:text-[80px] mb-6 md:mb-9 lg:mb-20 leading-[100%];
+  }
+
+  h2 {
+    @apply text-[36px] md:text-[43px] lg:text-[64px] font-medium leading-[135%] mb-4;
+  }
+
+  h3 {
+    @apply text-[32px] md:text-[35px] lg:text-[40px] font-medium leading-[135%] mb-4;
+  }
+
+  .my-container {
     width: 100%;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: clamp(10px, 5vw, 100px);
-    padding-right: clamp(10px, 5vw, 100px);
+    margin-inline: auto;
+    padding-inline: clamp(10px, 5vw, 100px);
   }
 }

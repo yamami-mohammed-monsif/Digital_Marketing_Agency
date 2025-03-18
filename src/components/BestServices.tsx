@@ -5,7 +5,7 @@ const BestServices = () => {
   return (
     <section
       id="services"
-      className="my-container mb-10 md:mb-[60px] lg:mb-[109px] "
+      className="my-container mb-[60px] md:mb-[83px] lg:mb-[99px] xl:mb-[152px] "
     >
       <div className="md:grid md:grid-cols-2 mb-6 md:mb-[30px] lg:mb-10 ">
         <h2>Best Services!</h2>

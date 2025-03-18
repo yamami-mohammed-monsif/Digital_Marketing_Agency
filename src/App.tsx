@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection";
 import BestServices from "./components/BestServices";
 import RecentWork from "./components/RecentWork";
 import Testimonials from "./components/Testimonials";
+import CallToAction from "./components/CallToAction";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BestServices />
       <RecentWork />
       <Testimonials />
+      <CallToAction />
     </>
   );
 }

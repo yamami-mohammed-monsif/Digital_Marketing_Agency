@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { services } from "../data.json";
 
 const BestServices = () => {
   return (
@@ -32,6 +33,16 @@ const BestServices = () => {
       >
         Learn More!
       </motion.button>
+      <ul className="grid gap-6 md:gap-9 md:grid-cols-2 lg:grid-cols-4 items-end mt-10 md:mt-11 lg:mt-[55px]">
+        {services.map((item) => {
+          return (
+            <li key={item.id} className="text-[40px] font-medium ">
+              {item.text}
+              <span className="block mt-6 w-full h-[1px] bg-main"></span>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };

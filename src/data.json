@@ -4,5 +4,12 @@
     { "id": 2, "text": "About", "url": "#about" },
     { "id": 3, "text": "Service", "url": "#services" },
     { "id": 4, "text": "Office", "url": "#office" }
+  ],
+
+  "services": [
+    { "id": 1, "text": "Consultant Business Strategy" },
+    { "id": 2, "text": "Google Ads Management" },
+    { "id": 3, "text": "Research and Discovery" },
+    { "id": 4, "text": "Social Media Marketing" }
   ]
 }

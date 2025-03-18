@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header
       className="w-full py-[32px] md:py-10  mb-8 md:mb-12 lg:mb-[95px]"
-      id="header "
+      id="header"
     >
       <div className="my-container flex items-center justify-between">
         {/* logo */}
@@ -66,7 +66,11 @@ const Header = () => {
             {navLinks.map((item) => {
               return (
                 <motion.li
-                  whileHover={{ scale: 1.2, fontWeight: "500" }}
+                  whileHover={{
+                    scale: 1.2,
+                    fontWeight: "500",
+                    textShadow: "0px 0px 10px rgba(0,0,0,0.3)",
+                  }}
                   key={item.id}
                   onClick={() => setIsOpen(false)}
                 >

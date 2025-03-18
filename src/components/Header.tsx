@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header
       className="w-full py-[32px] md:py-10  mb-8 md:mb-12 lg:mb-[95px]"
-      id="#header "
+      id="header "
     >
       <div className="my-container flex items-center justify-between">
         {/* logo */}

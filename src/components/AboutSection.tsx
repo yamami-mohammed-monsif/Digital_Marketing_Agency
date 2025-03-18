@@ -1,6 +1,9 @@
 const AboutSection = () => {
   return (
-    <section className="my-container md:grid grid-cols-2 mb-[60px] md:mb-[75px] lg:mb-[118px]">
+    <section
+      id="about"
+      className="my-container md:grid grid-cols-2 mb-[60px] md:mb-[75px] lg:mb-[118px]"
+    >
       <h2>About Us!</h2>
       <div>
         <p className="mb-10 md:mb-6">

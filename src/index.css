@@ -7,7 +7,7 @@
   --font-secondary: "Poppins", sans-serif;
 
   --color-main: hsla(0, 0%, 11%, 1);
-  --color-overlay: rgba(0, 0, 0, 0.3);
+  --color-overlay: rgba(0, 0, 0, 0.4);
 }
 
 @layer base {
@@ -20,7 +20,7 @@
   }
 
   h2 {
-    @apply text-[36px] md:text-[43px] lg:text-[64px] font-medium leading-[135%] mb-4;
+    @apply text-[36px] md:text-[43px] lg:text-[64px] font-medium leading-[135%] mb-4 md:mb-0;
   }
 
   h3 {

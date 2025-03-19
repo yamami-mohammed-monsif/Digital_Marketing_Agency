@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import HamburgerButton from "./HamburgerButton";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Reveal from "./Reveal";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,27 +75,31 @@ const Header = () => {
                   key={item.id}
                   onClick={() => setIsOpen(false)}
                 >
-                  <a href={item.url}>{item.text}</a>
+                  <Reveal>
+                    <a href={item.url}>{item.text}</a>
+                  </Reveal>
                 </motion.li>
               );
             })}
           </ul>
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              y: -5,
-              boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.3)",
-              backgroundColor: "#ffff",
-              color: "hsla(0, 0%, 11%, 1)",
-            }}
-            whileTap={{
-              scale: 0.9,
-            }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="cursor-pointer bg-main text-white rounded-[30px] py-3 px-6 lg:py-4 lg:px-8 absolute bottom-40 md:static"
-          >
-            Get in touch
-          </motion.button>
+          <Reveal>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                y: -5,
+                boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.3)",
+                backgroundColor: "#ffff",
+                color: "hsla(0, 0%, 11%, 1)",
+              }}
+              whileTap={{
+                scale: 0.9,
+              }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="cursor-pointer bg-main text-white rounded-[30px] py-3 px-6 lg:py-4 lg:px-8 md:static"
+            >
+              Get in touch
+            </motion.button>
+          </Reveal>
         </motion.nav>
       </div>
     </header>

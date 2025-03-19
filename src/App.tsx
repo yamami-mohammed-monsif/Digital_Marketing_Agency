@@ -7,7 +7,22 @@ import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 
+import Lenis from "lenis";
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <>
       <Header />

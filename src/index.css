@@ -12,6 +12,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-main text-main text-[18px] leading-[180%] max-w-[1440px] mx-auto relative;
   }

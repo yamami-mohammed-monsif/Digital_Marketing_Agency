@@ -13,7 +13,7 @@ a modern and responsive landing page built with React and various animation libr
 
 ## 🌐 Demo
 
-You can view a live demo of the project [here](<[link](https://yamami-mohammed-monsif.github.io/Digital_Marketing_Agency/)>).
+You can view a live demo of the project [here](https://yamami-mohammed-monsif.github.io/Digital_Marketing_Agency/)
 
 ## ✨ Features
 
